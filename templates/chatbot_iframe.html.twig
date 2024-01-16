@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ asset('chatbot.css') }}">
+<div id="bot" style="margin-top:25px">
+	<div id="container">
+		<div id="header">
+			Chatbot
+		</div>
+		<div id="body">
+			<div class="userSection">
+				<div class="messages user-message">Hi, quelle est votre question ? Je vous écoute.</div>
+				<div class="seperator"></div>
+			</div>
+			<div class="botSection">
+				<div class="messages bot-reply"></div>
+				<div class="seperator"></div>
+			</div>
+		</div>
+		<div id="inputArea">
+			<input type="text" name="message" id="userInput" placeholder="Please enter your message here" required>
+			<input type="submit" id="send" value="Send">
+		</div>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="{{ asset('js/chatbot.js') }}"></script>
